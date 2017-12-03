@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,4BAA4B;EAC3B,KAAK,EAHE,GAAG",
+"sources": ["../scss/skins/pink.scss"],
+"names": [],
+"file": "pink.css"
+}
