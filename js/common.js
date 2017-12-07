@@ -20,6 +20,8 @@ $(window).load(function() {
 	$(".loader").fadeOut();
 	$(".pre_loader").delay(400).fadeOut("slow");
 
+	
+
 });
 
 /*document.addEventListener('DOMContentLoaded', function(){
@@ -50,3 +52,4 @@ $(window).load(function() {
 
 })
 */
+

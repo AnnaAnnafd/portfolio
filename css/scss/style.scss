@@ -8,7 +8,6 @@
 
 body {
 	font-family: 'Montserrat Alternates', sans-serif;
-	height: 3000px;
 }
 
 .clearfix:after {
@@ -16,6 +15,31 @@ body {
 	content:'';
 	clear:both;
 }
+
+.title{
+	text-transform: uppercase;
+	color: #660303;
+}
+
+.md_title{	
+	font-size: 24px;
+	line-height: 28px;	
+	font-weight: 600;
+}
+
+.sm_title{
+	font-size: 20px;
+	line-height: 24px;	
+}
+
+.descr {
+	font-size: 20px;
+	line-height: 22px;
+    margin-top: 15px;
+    line-height: 18px;
+    color: #575050;
+}
+
 
 // preloader
 .pre_loader{
@@ -90,7 +114,6 @@ body {
 
 // navigation block
 .nav_block{
-	position: static;
 	top: -20px;
 	background-color: rgba(11, 11, 11, 0);
 	transition: all 0.3s;
@@ -119,20 +142,25 @@ body {
 .nav_block.fixed{
 	position: fixed;
 	top: 0;
-	left: 0;
+	left: 12px;
 	width: 100%;
-	background-color: rgba(227, 222, 222, 0.45);
-	box-shadow: 10px 10px 10px #c7c2c2;
+	background-color: #fff;
+	z-index: 100;
+	box-shadow: 5px 5px 10px #c7c2c2;
     font-size: 14px;
+    transition: all 0.5s;
  }
 
  .nav_block.fixed .row{
  	padding: 0 150px;
+ 	transition: all 0.5s;
  }
 
- section{
- 	margin-top: 80px;
- }
+// sections
+
+section{
+	padding: 40px 0;
+}
 
  .s_title{
  	text-transform: uppercase;
@@ -144,6 +172,8 @@ body {
  	color: #660303;
  	border-bottom: 2px solid #660303;
  }
+
+ // section about
 
  .l_side{
  	text-align: right;
@@ -159,15 +189,18 @@ body {
   	margin-bottom: 25px;
   }
 
+  .icon{
+  	color: #fff;
+	background: #660303;
+	border-radius: 50%;
+	transition: all 0.5s;
+  }
+
  .info_item .icon{
 	display: block;
-	float: right;
-	color: #fff;
-	background: #660303;
+	float: right;	
 	padding: 20px;
-	border-radius: 50%;
 	font-size: 32px;
-	transition: all 0.5s;
  }
 
  .info_item .icon:hover{
@@ -191,21 +224,6 @@ body {
 	padding-left: 85px;
 }
 
-.item-descr h3{
-	font-size: 24px;
-	line-height: 28px;
-	text-transform: uppercase;
-	font-weight: 600;
-	color:  #660303;
-}
-
-.item-descr p{
-	font-size: 20px;
-	line-height: 22px;
-    margin-top: 15px;
-    line-height: 18px;
-    color: #575050;
-}
 
 .my_photo{
 	text-align: center;
@@ -218,7 +236,10 @@ body {
 
 .promo{
 	min-height: 300px;
+	background: transparent;
 }
+
+// section promo
 
 .s_title_promo{
 	color: #fff;
@@ -243,4 +264,122 @@ body {
 .btn:hover{
 	color: #660303;
 	border: 1px solid #660303;
+}
+
+.bg_color{
+	background: #f5f0f0;
+}
+
+
+// section skills
+
+.progressbar {
+    display: inline-block;
+    width: 205px;
+    margin: 25px;
+}
+.circle {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.circle canvas {
+    vertical-align: middle;
+    border: 3px solid #660303;
+    border-radius: 50%;
+    padding: 2px;
+}
+.circle div {
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+}
+.circle strong i {
+    font-style: normal;
+    font-size: 0.6em;
+    font-weight: normal;
+}
+.circle span {
+    display: block;
+    color: #aaa;
+    margin-top: 12px;
+}
+
+.skill_descr{
+	text-align: center;
+}
+
+// section education
+
+.left_content{
+	text-align: right;
+	padding-right: 75px;
+	position: relative;
+	border-right: 1px solid #660303;
+	padding-bottom: 50px;
+}
+
+.right_content{
+	padding-left: 75px;
+}
+
+.educ_block .left_content.last{
+	padding-bottom: 100px;
+}
+
+.left_content .icon{
+	font-size: 28px;
+	padding: 10px;
+	position: absolute;
+	right: -27px;
+	top: 0;
+}
+
+.bottom{
+	width: 30px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: transparent transparent #660303 transparent;
+    border-style: solid;
+    border-width: 30px
+}
+
+.s_title_promo.italic{
+	font-size: 24px;
+	line-height: 28px;
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// section portfolio
+
+.w-exmpl{
+	display: block;
+}
+
+.w-exmpl img{
+	width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.5s;
+    margin-bottom: 25px;
+}
+
+.w-exmpl:hover img{
+	box-shadow: 6px 8px 23px #6f6767;
+}
+
+.w_ex{
+	text-align: center;
 }
