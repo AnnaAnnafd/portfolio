@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function(){
 					data: $(this).serialize()
 				}).done(function() {
 					$(this).find("input").val("");
-					alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+					$('.success_popup').addClass('open');
 					$("#form").trigger("reset");
 				});
 				return false;

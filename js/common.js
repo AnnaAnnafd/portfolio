@@ -89,7 +89,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 			});
 
+	document.querySelector('#close_popup').addEventListener('click', function(){
 
+		document.querySelector('.success_popup').classList.remove('open');
+
+	})
 })
 
 

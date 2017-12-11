@@ -497,4 +497,43 @@ button.send.btn:hover {
   display: inline-block;
   cursor: pointer; }
 
+.success_popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000008f;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.5s; }
+
+.success_popup.open {
+  opacity: 100;
+  z-index: 1005; }
+
+.success_popup .descr {
+  text-align: center;
+  background: #211d1d;
+  padding: 50px;
+  border-radius: 15px;
+  position: relative;
+  color: #fff;
+  top: 50%;
+  width: 300px;
+  margin: 0 auto;
+  transform: translateY(-50%); }
+
+.success_popup p {
+  font-size: 14px;
+  margin-bottom: 20px; }
+
+.success_popup .btn {
+  width: 100px;
+  padding: 10px 15px; }
+
+.success_popup .btn:hover {
+  color: green;
+  border: 1px solid green; }
+
 /*# sourceMappingURL=style.css.map */
