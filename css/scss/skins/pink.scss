@@ -1,5 +1,43 @@
-$hov_a: red;
+$hov_a: #660303;
+$title: #660303;
+$btn_hover: #eb3333;
 
 .nav_block nav ul li a:hover{
 	color: $hov_a;
+}
+
+.title {
+	color: $title;
+}
+
+ .s_title{
+ 	color: $title;
+ 	border-bottom: 2px solid $title;
+ }
+
+  .info_item .icon:hover{
+ 	background: #fff;
+ 	color: $title;
+ }
+
+ .btn:hover{
+	color: $btn_hover;
+	border: 1px solid $btn_hover;
+}
+
+.left_content{
+	border-right: 1px solid $title;
+}
+
+.bottom{
+border-color: transparent transparent $title transparent;
+}
+
+
+.mob_menu li a:hover{
+	color: $title;
+}
+
+close_btn:hover{
+	color: $title;
 }

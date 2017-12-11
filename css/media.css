@@ -1,15 +1,36 @@
-/*==========  Desktop First Method  ==========*/
-
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
+@media only screen and (max-width : 1091px) {
+	.nav_block {
+		display: none;
+	}
+	.mob_menu_icon{
+		display: block;
+	}
 }
 
-/* Medium Devices, Desktops */
+
 @media only screen and (max-width : 992px) {
-
+	.my_photo{
+		max-width: 400px;
+	}
+	.l_side{
+		text-align: left;
+	}
+	.l_side .icon{
+		float: left;
+	}
+	.l_side .item-descr{
+		padding-left: 85px;
+		padding-right: 0;
+	}
+	.skill_descr .descr{
+		min-height: 97px;
+	}
+	.contacts{
+		text-align: left;
+	}
 }
-/* Small Devices, Tablets */
+
+
 @media only screen and (max-width : 768px) {
 	.header_title h1{
 		font-size: 35px;
@@ -20,11 +41,67 @@
 		padding: 22px;
 		font-size: 18px;
 	}
+	.header_title .icon_down{
+		bottom: 20px;
+	}
+	.progressbar{
+		display: block;
+		margin: 0 auto;
+	}	
 }
-/* Extra Small Devices, Phones */
+
+
+@media only screen and (max-width : 600px){
+	.right_content{
+		padding-left: 20px;	
+	}
+	.left_content{
+		padding-right: 20px;	
+	}
+	.left_content .icon{
+		font-size: 16px;	
+		right: -20px;
+		padding: 7px;
+	}
+	.educ_block .title.show_bl{
+		display: none;
+	}
+	.educ_block .title.mobile{
+		display: block;
+	}
+	.left_content{
+		padding-bottom: 78px;	
+	}
+	.descr{
+		margin-top: 5px;	
+	}
+	.md_title{
+		font-size: 	19px;
+	}
+
+	.sm_title{
+		font-size: 12px;
+		line-height: 19px;	
+	}
+
+	.s_title_promo.italic{
+		font-size: 19px;	
+	}
+	.s_title_promo{
+		margin-bottom: 20px;	
+	}
+	.promo{
+		padding: 18px;
+	}
+	.mob_menu .logo{
+		margin-bottom: 5px;
+	}
+}
+
+
 @media only screen and (max-width : 480px) {
 	.header_title h1{
-		font-size: 22px;
+		font-size: 18px;
 		line-height: 22px;
 		box-shadow: 10px 10px 4px #000;
 	}
@@ -32,10 +109,27 @@
 		padding: 22px;
 		font-size: 18px;
 	}
-
+	.s_title{
+		font-size: 30px;
+	}
+	.callback input{
+		font-size: 16px;	
+	}
 }
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
 
+
+@media only screen and (max-width : 390px){
+	.info_item .icon{
+		font-size: 23px;
+		padding: 13px;
+	}
+	.r_side .item-descr{
+		padding-left: 55px;
+	}
+	.descr{
+		font-size: 16px;
+	}
 }
+
+
 

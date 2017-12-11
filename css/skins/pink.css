@@ -1,4 +1,31 @@
 .nav_block nav ul li a:hover {
-  color: red; }
+  color: #660303; }
+
+.title {
+  color: #660303; }
+
+.s_title {
+  color: #660303;
+  border-bottom: 2px solid #660303; }
+
+.info_item .icon:hover {
+  background: #fff;
+  color: #660303; }
+
+.btn:hover {
+  color: #eb3333;
+  border: 1px solid #eb3333; }
+
+.left_content {
+  border-right: 1px solid #660303; }
+
+.bottom {
+  border-color: transparent transparent #660303 transparent; }
+
+.mob_menu li a:hover {
+  color: #660303; }
+
+close_btn:hover {
+  color: #660303; }
 
 /*# sourceMappingURL=pink.css.map */
